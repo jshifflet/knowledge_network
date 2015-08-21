@@ -12,8 +12,9 @@ def select_files(root, files):
         #do concatenation here to get full path 
         full_path = join(root, file)
         ext = splitext(file)[1]
-
+        
         if ext == ".py":
+            print(full_path)
             selected_files.append(full_path)
 
     return selected_files
